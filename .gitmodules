@@ -1,0 +1,3 @@
+[submodule "IP/FreeCores/uart16550_qsys_ready"]
+	path = IP/FreeCores/uart16550_qsys_ready
+	url = https://github.com/Josfemova/uart16550_qsys_ready.git
