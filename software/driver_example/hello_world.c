@@ -25,8 +25,7 @@ struct uart16550* uart = (struct uart16550*)UART0_BASE;
 
 int main() {
   //printf("Hello from Nios II!\n");
-  uart16550_init(uart, UART_CLK, 115200, UART16550_PARITY_NONE,
-                 UART16550_LCR_STB_1BIT, UART16550_LCR_WLS_8BIT_WORD);
+  uart16550_init(uart, NULL);
   char buffer[20];
   uart16550_read(uart, buffer, 20);
   uart16550_write(uart, buffer, 20);
